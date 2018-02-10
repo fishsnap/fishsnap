@@ -12,6 +12,7 @@
 		6CE80E8D202F6E3F00A985BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CE80E8C202F6E3F00A985BD /* Assets.xcassets */; };
 		6CE80E90202F6E3F00A985BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CE80E8E202F6E3F00A985BD /* LaunchScreen.storyboard */; };
 		6CE80E98202F728200A985BD /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE80E97202F728200A985BD /* CameraController.swift */; };
+		B71D1774D4CEFBF3DC44224F /* Pods_FishSnap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B923158EA47B05CE6A085A /* Pods_FishSnap.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		6CE80E8F202F6E3F00A985BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CE80E91202F6E3F00A985BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CE80E97202F728200A985BD /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CameraController.swift; path = Controllers/CameraController.swift; sourceTree = "<group>"; };
+		7DBE32D776ACE68496A069C9 /* Pods-FishSnap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishSnap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FishSnap/Pods-FishSnap.debug.xcconfig"; sourceTree = "<group>"; };
+		B5B923158EA47B05CE6A085A /* Pods_FishSnap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishSnap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B92782AEB56FA01D4E2F6D9C /* Pods-FishSnap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishSnap.release.xcconfig"; path = "Pods/Target Support Files/Pods-FishSnap/Pods-FishSnap.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B71D1774D4CEFBF3DC44224F /* Pods_FishSnap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22E5638C4A8860214A456FC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DBE32D776ACE68496A069C9 /* Pods-FishSnap.debug.xcconfig */,
+				B92782AEB56FA01D4E2F6D9C /* Pods-FishSnap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6CE80E79202F6E3F00A985BD = {
 			isa = PBXGroup;
 			children = (
 				6CE80E84202F6E3F00A985BD /* FishSnap */,
 				6CE80E83202F6E3F00A985BD /* Products */,
+				22E5638C4A8860214A456FC7 /* Pods */,
+				C580419961387A5931941B58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = FishSnap;
 			sourceTree = "<group>";
 		};
+		C580419961387A5931941B58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5B923158EA47B05CE6A085A /* Pods_FishSnap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CE80E94202F6E3F00A985BD /* Build configuration list for PBXNativeTarget "FishSnap" */;
 			buildPhases = (
+				F8FA117A319CAB5E02C7CB57 /* [CP] Check Pods Manifest.lock */,
 				6CE80E7E202F6E3F00A985BD /* Sources */,
 				6CE80E7F202F6E3F00A985BD /* Frameworks */,
 				6CE80E80202F6E3F00A985BD /* Resources */,
+				73F2885435DCC631A61D6EFC /* [CP] Embed Pods Frameworks */,
+				B32DAD64B8C7589C2953F218 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73F2885435DCC631A61D6EFC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FishSnap/Pods-FishSnap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B32DAD64B8C7589C2953F218 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FishSnap/Pods-FishSnap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8FA117A319CAB5E02C7CB57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6CE80E7E202F6E3F00A985BD /* Sources */ = {
@@ -272,6 +347,7 @@
 		};
 		6CE80E95202F6E3F00A985BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DBE32D776ACE68496A069C9 /* Pods-FishSnap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -289,6 +365,7 @@
 		};
 		6CE80E96202F6E3F00A985BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B92782AEB56FA01D4E2F6D9C /* Pods-FishSnap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;

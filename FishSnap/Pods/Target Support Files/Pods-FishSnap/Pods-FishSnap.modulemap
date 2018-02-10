@@ -1,0 +1,6 @@
+framework module Pods_FishSnap {
+  umbrella header "Pods-FishSnap-umbrella.h"
+
+  export *
+  module * { export * }
+}
