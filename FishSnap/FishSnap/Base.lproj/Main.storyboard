@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -50,7 +49,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="SRE-Nn-BQP">
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="xjH-hk-Vpn"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="xjH-hk-Vpn">
+                            <connections>
+                                <action selector="cameraTapped:" destination="BYZ-38-t0r" id="nd1-Km-ZXq"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="descriptionLabel" destination="xVQ-bi-0Cx" id="VM3-EN-JDr"/>

@@ -12,6 +12,7 @@
 		6CE80E8D202F6E3F00A985BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CE80E8C202F6E3F00A985BD /* Assets.xcassets */; };
 		6CE80E90202F6E3F00A985BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CE80E8E202F6E3F00A985BD /* LaunchScreen.storyboard */; };
 		6CE80E98202F728200A985BD /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE80E97202F728200A985BD /* CameraController.swift */; };
+		6CE80E9A202FA78300A985BD /* FishClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6CE80E99202FA78300A985BD /* FishClassifier.mlmodel */; };
 		B71D1774D4CEFBF3DC44224F /* Pods_FishSnap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B923158EA47B05CE6A085A /* Pods_FishSnap.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		6CE80E8F202F6E3F00A985BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CE80E91202F6E3F00A985BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CE80E97202F728200A985BD /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CameraController.swift; path = Controllers/CameraController.swift; sourceTree = "<group>"; };
+		6CE80E99202FA78300A985BD /* FishClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FishClassifier.mlmodel; sourceTree = "<group>"; };
 		7DBE32D776ACE68496A069C9 /* Pods-FishSnap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishSnap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FishSnap/Pods-FishSnap.debug.xcconfig"; sourceTree = "<group>"; };
 		B5B923158EA47B05CE6A085A /* Pods_FishSnap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishSnap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B92782AEB56FA01D4E2F6D9C /* Pods-FishSnap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishSnap.release.xcconfig"; path = "Pods/Target Support Files/Pods-FishSnap/Pods-FishSnap.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				6CE80E8C202F6E3F00A985BD /* Assets.xcassets */,
 				6CE80E8E202F6E3F00A985BD /* LaunchScreen.storyboard */,
 				6CE80E91202F6E3F00A985BD /* Info.plist */,
+				6CE80E99202FA78300A985BD /* FishClassifier.mlmodel */,
 			);
 			path = FishSnap;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CE80E98202F728200A985BD /* CameraController.swift in Sources */,
+				6CE80E9A202FA78300A985BD /* FishClassifier.mlmodel in Sources */,
 				6CE80E86202F6E3F00A985BD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
